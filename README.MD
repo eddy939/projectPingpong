@@ -18,6 +18,7 @@ Languages used here are HTML and CSS.
 For any issues, concerns or contributions, please e-mail me at eddyonyango@gmail.com
 
 ## Link to site
+https://eddy939.github.io/projectPingpong/
 
 
 ##MIT License
