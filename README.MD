@@ -2,7 +2,7 @@
 #### Ping Pong Project, May 2018
 #### By **Eddy Onyango**
 ## Description
-This is my week3 individual project.It is a web application that takes a number from a user and returns a range of nubers from 1 to the chosen number with the following exceptions:
+This is a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
 -Numbers divisible by 3 are replaced with "ping"
 -Numbers divisible by 5 are replaced with "pong"
