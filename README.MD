@@ -4,9 +4,9 @@
 ## Description
 This is a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
 
--Numbers divisible by 3 are replaced with "ping"
--Numbers divisible by 5 are replaced with "pong"
--Numbers divisible by 15 are replaced with "pingpong"
+* Numbers divisible by 3 are replaced with "ping"
+* Numbers divisible by 5 are replaced with "pong"
+* Numbers divisible by 15 are replaced with "pingpong"
 
 ## Setup/Installation Requirements
 In order to use this application, one does not need a server, install dependencies or set up a database. Just use as is.
@@ -21,7 +21,7 @@ For any issues, concerns or contributions, please e-mail me at eddyonyango@gmail
 https://eddy939.github.io/projectPingpong/
 
 
-##MIT License
+## MIT License
 
 Copyright (c) [2018] [EddyOnyango.inc]
 
