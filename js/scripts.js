@@ -1,35 +1,31 @@
 //Business Logic
-var countUp = function(countTo){
+var pingPong = function(input) {
   var result = [];
-  for(var i = 1; i <= countTo; i++){
-      var index = result.indexOf(i);
-      if(i % 15 === 0) {
-        result.splice(index, 0);
-        result.push('pingpong');
-      }else if(i % 5 === 0) {
-        result.splice(index, 0);
-        result.push('pong');
-      }else if(i % 3 === 0) {
-        result.splice(index, 0);
-        result.push('ping');
-      }else{
-        result.push(i);
-      }
+  for(var i = 1; i <= input; i++){
+     if (i % 3 === 0 && i % 5 === 0){
+      result.push('pingpong');
+    }else	if(i % 3 === 0){
+      result.push('ping');
+    } else if (i % 5 === 0){
+      result.push('pong');
+    } else {
+      result.push(i);
+    }
   }
-
-  return result;
+    return(result)
 };
 
 //User Interface Logic
 $(document).ready(function(){
-  $("#userInput").submit(function(event){
+	$('#myForm').submit(function(e){
     $("#output").empty();
-    var countTo = parseInt($("input#countTo").val());
-    var output = countUp(countTo);
+  	e.preventDefault();
+    var input = parseInt($('input#value').val());
+  	var output = pingPong(input);
 
-    output.forEach(function(item){
-      $("#output").append('<li>' + item + '</li>');
+    output.forEach(function(value) {
+    $("#output").append('<li>' + value + '</li>');
     });
-    event.preventDefault();
+    /* $('#value').val('') */
   });
 });
