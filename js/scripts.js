@@ -17,9 +17,9 @@ var pingPong = function(input) {
 
 //User Interface Logic
 $(document).ready(function(){
-	$('#myForm').submit(function(e){
+	$('#myForm').submit(function(event){
     $("#output").empty();
-  	e.preventDefault();
+  	event.preventDefault();
     var input = parseInt($('input#value').val());
   	var output = pingPong(input);
 
